@@ -12,11 +12,10 @@
 3、反向传播算法+梯度下降算法，迭代更新参数寻优。<br>
 训练主文件为“train.m”,<br>
 训练预览部分数字图像情况：<br>
-<div align=center> ![img1](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/digital.jpg)<br> 
-<div align=left>训练迭代过程：<br>
-<div align=center>![img2](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/train.jpg)<br>
+![img1](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/digital.jpg)<br> 
+训练迭代过程：<br>
+![img2](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/train.jpg)<br>
 
-<div align=left>
 ## 网络测试工作流程
 待网络训练完毕，测试流程与训练流程大致相似，也需要进行正向传播，但也有些区别，测试过程不涉及到网络参数更新，训练的一些因素也需要冻结屏蔽。
 1、数字图像测试集预处理：具体是10000张图像和标签通过二进制方式逐步读入，然后归一化为28×28×1×numsImg大小，[0,1]范围，float类型数据；标签为numsImg×1 大小,0~9数字，float类型数据；<br>
