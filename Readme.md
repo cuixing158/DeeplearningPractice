@@ -12,7 +12,7 @@
 3、反向传播算法+梯度下降算法，迭代更新参数寻优。<br>
 训练主文件为“train.m”,<br>
 训练预览部分数字图像情况：<br>
-<div align=center>![img1](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/digital.jpg)<br></div>
+<div align=center> ![img1](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/digital.jpg)<br> </div>
 训练迭代过程：<br>
 <div align=center>![img2](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/train.jpg)<br></div>
 
