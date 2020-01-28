@@ -1,8 +1,4 @@
-% 参考来源于https://blog.csdn.net/qq_41094877/article/details/89969802以及官方VisualizeHighDimensionalDataUsingTSNEExample之处理二进制文件示例
-% https://ww2.mathworks.cn/help/stats/visualize-high-dimensional-data-using-t-sne.html?requestedDomain=cn
-% 待调整好此示例程序的训练和测试，考验误差反向传播算法原理，可以关注知乎“如何通俗易懂理解误差反向传播算法”和u盘视频讲解
-% 2020.1.12 cuixingxing
-% 2020.1.26写篇博客，每个符号矩阵大小论述清楚，含义明确
+
 
 %% 1、数据MNISTData预处理
 imageFileNameTrain = 'G:\MNIST\train-images.idx3-ubyte';
