@@ -4,7 +4,7 @@
 
 ## 网络架构设计
 考虑到网络简单和易用性，根据MNIST数据集特点，设计了四层网络层，分别为conv+relu+meanPool、conv+relu+dropout、conv+relu+dropout、conv+softmax四个连续模块层。每个模块层进行串连连接，不涉及跳层结构，其中第一个模块层的conv是CNN卷积操作，卷积核大小为9×9×1×20,四维矩阵（h×w×c_in×c_out），即20个卷积核；第二个及以后模块的conv其实是全连接层，因为前面的层每个神经元都会与下一层所有神经元进行全连接，神经元个数分别人工设定为95、45、10。这三层是用BP反向传播原理进行参数更新，第一层是按照CNN的反向传播算法进行更新。网络示意图如下,示意图中只画了CNN层和一个最后模块层：
-![img](https://github.com/cuixing158/DeeplearningPractice/tree/master/imgs/network.jpg)<br>
+![img](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/network.jpg)<br>
 
 ## 网络训练工作流程
 1、数字图像训练集预处理：具体是60000张图像和标签通过二进制方式逐步读入，然后归一化为28×28×1×numsImg大小，[0,1]范围，float类型数据；标签为numsImg×1 大小,0~9数字，float类型数据；<br>
@@ -12,9 +12,9 @@
 3、反向传播算法+梯度下降算法，迭代更新参数寻优。<br>
 训练主文件为“train.m”,<br>
 训练预览部分数字图像情况：<br>
-![img1](https://github.com/cuixing158/DeeplearningPractice/tree/master/imgs/digital.jpg)<br>
+![img1](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/digital.jpg)<br>
 训练迭代过程：<br>
-![img2](https://github.com/cuixing158/DeeplearningPractice/tree/master/imgs/train.jpg)<br>
+![img2](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/train.jpg)<br>
 
 ## 网络测试工作流程
 待网络训练完毕，测试流程与训练流程大致相似，也需要进行正向传播，但也有些区别，测试过程不涉及到网络参数更新，训练的一些因素也需要冻结屏蔽。
@@ -22,9 +22,9 @@
 2、超参数学习速率，动量因子，dropout等需要屏蔽，屏蔽方式见"Predict.m"内容。<br>
 3、计算统计测试整体准确率。<br>
 测试主文件为“test.m”,<br>
-![img3](https://github.com/cuixing158/DeeplearningPractice/tree/master/imgs/digital2.jpg)<br>
+![img3](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/digital2.jpg)<br>
 测试集总体准确率：<br>
-![img4](https://github.com/cuixing158/DeeplearningPractice/tree/master/imgs/test.jpg)<br>
+![img4](https://github.com/cuixing158/DeeplearningPractice/blob/master/imgs/test.jpg)<br>
 
 ## Reference
 [神经网络BP反向传播算法原理和详细推导流程](https://uzshare.com/view/787051)<br>
