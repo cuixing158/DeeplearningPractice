@@ -1,5 +1,4 @@
 
-
 %% 1、数据MNISTData预处理
 imageFileNameTrain = 'G:\MNIST\train-images.idx3-ubyte';
 labelFileNameTtrain = 'G:\MNIST\train-labels.idx1-ubyte';
